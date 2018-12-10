@@ -15,9 +15,9 @@ class Admin:
 
     @bot.event
     async def on_member_join(member):
-        server = member.guild
-        newbie = '{0.mention} is building a bridgei'
-        await ctx.send(newbie.format(member, server))
+        member = member.guild
+        newbie = '{0.mention} is building a bridge.'
+        await ctx.send(newbie.format(member))
 
 
 
