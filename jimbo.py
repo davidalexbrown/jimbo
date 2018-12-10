@@ -3,14 +3,14 @@ import random
 import os
 from discord.ext import commands
 ###
-token = ''
+token = 'NTE5MjYzMzQyMTg4MTY3MjAw.Du94Cg.RCsROrnFtWgfJNlCtPKJBTPZDaY'
 prefix = "!"
 bot = commands.Bot(command_prefix=prefix, case_insensitive = True)
 
 ##
 ### Extension List
 
-extensions = ['fun', 'inmsg']
+extensions = ['fun', 'inmsg', 'admin']
 
 ##
 ### Bot starts
