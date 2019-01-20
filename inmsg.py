@@ -11,10 +11,7 @@ class inmsg:
         self.bot = bot
 
     async def on_message(self, message):
-        if "jimbo" in message.content.lower():
-            channel = message.channel
-            await channel.send(":gun: keep my name out of your mouf :gun:")
-        elif "cross" in message.content.lower():
+        if "cross" in message.content.lower():
             chesty = str(message.content)
             chesty = chesty.lower()
             ree = ""
@@ -32,6 +29,20 @@ class inmsg:
             await message.add_reaction('🌭')
         elif "oof" in message.content.lower():
             await message.add_reaction('🤕')
-
+        elif "hot dog" in message.content.lower():
+            await message.add_reaction('🍔')
+        elif "marimba" in message.content.lower():
+            await message.add_reaction('🇽')
+            await message.add_reaction('🇾')
+            await message.add_reaction('🇱')
+            await message.add_reaction('🇴')
+            await message.add_reaction('🇵')
+            await message.add_reaction('🇭')
+            await message.add_reaction('⭕')
+            await message.add_reaction('🇳')
+            await message.add_reaction('🇪')
+        elif "baha" in message.content.lower():
+            channel = message.channel
+            await channel.send("https://www.youtube.com/watch?v=Qkuu0Lwb5EM")
 def setup(bot):
     bot.add_cog(inmsg(bot))
