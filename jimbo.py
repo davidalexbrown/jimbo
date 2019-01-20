@@ -3,14 +3,14 @@ import random
 import os
 from discord.ext import commands
 ###
-token = ''
+token = 'NTE5MjYzMzQyMTg4MTY3MjAw.Du94Cg.RCsROrnFtWgfJNlCtPKJBTPZDaY'
 prefix = "!"
 bot = commands.Bot(command_prefix=prefix, case_insensitive = True)
 
 ##
 ### Extension List
 
-extensions = ['fun', 'inmsg', 'admin']
+extensions = ['fun', 'inmsg']
 
 ##
 ### Bot starts
@@ -37,6 +37,14 @@ async def unload(extension):
     except Exception as error:
         print ('{} did not unload. [{}]'.format(extension, error))
 
+@bot.command()
+async def reload():
+    for extension in extension:
+        try:
+            bot.unload_extension(extension)
+            bot.load_extension(extension)
+        except Exception as error:
+            print('Oof')
 ####
 if __name__ == '__main__':
     for extension in extensions:
