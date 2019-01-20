@@ -6,8 +6,6 @@ from discord.ext import commands
 prefix = "!"
 bot = commands.Bot(command_prefix=prefix)
 
-
-
 class inmsg:
     def __init__(self, bot):
         self.bot = bot
@@ -30,7 +28,7 @@ class inmsg:
             if ree == True:
                 channel = message.channel
                 await channel.send("G.K. probably never said that, you dolt.", file=discord.File('assets/grayons.jpg'))
-        elif "hot dog" in message.content.lower():
+        elif "sandwich" in message.content.lower():
             await message.add_reaction('🌭')
         elif "oof" in message.content.lower():
             await message.add_reaction('🤕')
