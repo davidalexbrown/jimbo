@@ -2,8 +2,9 @@ import discord
 import random
 import os
 from discord.ext import commands
+import auths
 ###
-token = 'NTE5MjYzMzQyMTg4MTY3MjAw.Du94Cg.RCsROrnFtWgfJNlCtPKJBTPZDaY'
+token = auths.token
 prefix = "!"
 bot = commands.Bot(command_prefix=prefix, case_insensitive = True)
 

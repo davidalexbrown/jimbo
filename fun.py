@@ -51,5 +51,12 @@ class Fun:
         '''
         await ctx.send(random.choice(['Heads', 'Tails']))
 
+    @commands.command()
+    async def lmgtfy(self, ctx, query):
+        '''
+        Stupid questions get this. !lmgtfy {query}
+        '''
+        await ctx.send("http://www.lmgtfy.com/?q={}".format(query))
+
 def setup(bot):
     bot.add_cog(Fun(bot))
