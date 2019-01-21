@@ -11,6 +11,7 @@ class inmsg:
         self.bot = bot
 
     async def on_message(self, message):
+        channel = message.channel
         if "cross" in message.content.lower():
             chesty = str(message.content)
             chesty = chesty.lower()
@@ -38,5 +39,7 @@ class inmsg:
         elif "baha" in message.content.lower():
             channel = message.channel
             await channel.send("https://www.youtube.com/watch?v=Qkuu0Lwb5EM")
+        elif "dance" in message.content.lower():
+            await channel.send("https://www.youtube.com/watch?v=AjPau5QYtYs")
 def setup(bot):
     bot.add_cog(inmsg(bot))
