@@ -35,15 +35,6 @@ class inmsg:
             marimba_react = ['🇽','🇾','🇱','🇴','🇵','🇭','⭕','🇳','🇪']
             for r in marimba_react:
                 await message.add_reaction(r)
-            #await message.add_reaction('🇽')
-            #await message.add_reaction('🇾')
-            #await message.add_reaction('🇱')
-            #await message.add_reaction('🇴')
-            #await message.add_reaction('🇵')
-            #await message.add_reaction('🇭')
-            #await message.add_reaction('⭕')
-            #await message.add_reaction('🇳')
-            #await message.add_reaction('🇪')
         elif "baha" in message.content.lower():
             channel = message.channel
             await channel.send("https://www.youtube.com/watch?v=Qkuu0Lwb5EM")
