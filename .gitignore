@@ -1,1 +1,4 @@
 assets/*
+__py*
+.DS*
+auths.py
