@@ -45,6 +45,6 @@ class inmsg:
             with open('assets/turbofolk', 'r') as turbolist:
                 turbolist = [line.rstrip('\n') for line in turbolist]
                 turbo = random.choice(turbolist)
-                await channel.send("{}, Cyka blyat. {}".format(message.author.mention, turbo))
+                await channel.send("{}, yIkEs. {}".format(message.author.mention, turbo))
 def setup(bot):
     bot.add_cog(inmsg(bot))
