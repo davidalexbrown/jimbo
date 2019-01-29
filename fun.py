@@ -75,5 +75,11 @@ class Fun:
             tune = random.choice(turbolist)
             await ctx.send("Here's a nice little tune for you. {}".format(tune))
 
+    @commands.command()
+    async def trout(self, ctx, victim):
+        '''
+        Hits someone with a trout
+        '''
+        await ctx.send("*slaps {} around a bit with a large trout".format(victim))
 def setup(bot):
     bot.add_cog(Fun(bot))
