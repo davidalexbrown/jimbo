@@ -38,14 +38,6 @@ async def unload(extension):
     except Exception as error:
         print ('{} did not unload. [{}]'.format(extension, error))
 
-@bot.command()
-async def reload():
-    for extension in extension:
-        try:
-            bot.unload_extension(extension)
-            bot.load_extension(extension)
-        except Exception as error:
-            print('Oof')
 ####
 if __name__ == '__main__':
     for extension in extensions:
