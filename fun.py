@@ -80,6 +80,6 @@ class Fun:
         '''
         Hits someone with a trout
         '''
-        await ctx.send("*slaps {} around a bit with a large trout".format(victim))
+        await ctx.send("*slaps {} around a bit with a large trout.*".format(victim))
 def setup(bot):
     bot.add_cog(Fun(bot))
