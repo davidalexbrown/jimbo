@@ -34,11 +34,6 @@ class inmsg:
             marimba_react = ['🇽','🇾','🇱','🇴','🇵','🇭','⭕','🇳','🇪']
             for r in marimba_react:
                 await message.add_reaction(r)
-        elif "baha" in message.content.lower():
-            channel = message.channel
-            await channel.send("https://www.youtube.com/watch?v=Qkuu0Lwb5EM")
-        elif "dance" in message.content.lower():
-            await channel.send("https://www.youtube.com/watch?v=AjPau5QYtYs")
         elif "proceeds from the father and the son" in message.content.lower():
             await channel.send("{}, REEEEEEEEEEEEEEEE".format(message.author.mention))
 def setup(bot):
