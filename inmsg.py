@@ -12,29 +12,18 @@ class inmsg:
 
     async def on_message(self, message):
         channel = message.channel
-        if "cross" in message.content.lower():
-            chesty = str(message.content)
-            chesty = chesty.lower()
-            ree = ""
-            if "pint" in chesty:
-                if "pipe" in chesty:
-                    ree = True
-                else:
-                    ree = False
-            else:
-                ree = False
-            if ree == True:
-                channel = message.channel
-                await channel.send("G.K. probably never said that, you dolt.", file=discord.File('assets/grayons.jpg'))
-        elif "sandwich" in message.content.lower():
+        message_normalized = str(message.content.lower())
+        if "cross" in message_normalized and "pint" in message_normalized and "pipe" in message_normalized:
+            await channel.send("G.K. probably never said that, you dolt.", file=discord.File('assets/grayons.jpg'))
+        elif "sandwich" in message_normalized:
             await message.add_reaction('🌭')
-        elif "hot dog" in message.content.lower():
+        elif "hot dog" in message_normalized:
             await message.add_reaction('🍔')
-        elif "marimba" in message.content.lower():
+        elif "marimba" in message_normalized:
             marimba_react = ['🇽','🇾','🇱','🇴','🇵','🇭','⭕','🇳','🇪']
             for r in marimba_react:
                 await message.add_reaction(r)
-        elif "proceeds from the father and the son" in message.content.lower():
+        elif "proceeds from the father and the son" in message_normalized:
             await channel.send("{}, REEEEEEEEEEEEEEEE".format(message.author.mention))
 def setup(bot):
     bot.add_cog(inmsg(bot))
