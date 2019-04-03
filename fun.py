@@ -58,12 +58,12 @@ class Fun:
         '''
         await ctx.send("http://www.lmgtfy.com/?q={}".format(query))
 
-    @commands.command()
-    async def about(self, ctx):
-        '''
-        Give you some Jimbo info, man.
-        '''
-        await ctx.send("Hello. My name is Jimbo.\n\nLet me tell you a little bit about my creation. Once upon a time, there was a man who was named Dbrown. This man was fond of the drink. This man was also moderately okay at python. This man combined his two loves, python and drink, and produced a love child. \n\nMe. \n\nI had a lonely childhood, being left alone in #bot-haus on dbrowncord, but eventually, I found the church, and dedicated my life to destroying traditional Catholic sexual morals. \n \nI believe a lot of this stems from the fact that my daddy never really loved me. And he beat me, with bizarre requests for !memes and puns.")
+    #@commands.command()
+    #async def about(self, ctx):
+    #    '''
+    #    Give you some Jimbo info, man.
+    #    '''
+    #    await ctx.send("Hello. My name is Jimbo.\n\nLet me tell you a little bit about my creation. Once upon a time, there was a man who was named Dbrown. This man was fond of the drink. This man was also moderately okay at python. This man combined his two loves, python and drink, and produced a love child. \n\nMe. \n\nI had a lonely childhood, being left alone in #bot-haus on dbrowncord, but eventually, I found the church, and dedicated my life to destroying traditional Catholic sexual morals. \n \nI believe a lot of this stems from the fact that my daddy never really loved me. And he beat me, with bizarre requests for !memes and puns.")
 
     @commands.command()
     async def turbofolk(self, ctx):
@@ -81,5 +81,6 @@ class Fun:
         Hits someone with a trout
         '''
         await ctx.send("*slaps {} around a bit with a large trout.*".format(victim))
+
 def setup(bot):
     bot.add_cog(Fun(bot))
