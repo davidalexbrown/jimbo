@@ -6,7 +6,7 @@ from discord.ext import commands
 prefix = "!"
 bot = commands.Bot(command_prefix=prefix)
 
-class inmsg:
+class inmsg(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
